@@ -31,7 +31,32 @@ public class Palindroma9 {
     public void setFrase(String frase) {
         this.frase = frase;
     }
-       
+       public void comparar(String frase)
+       {
+         int fin=frase.length()-1;
+         int compro=0;
+         int i=0;
+        while(i<fin)
+         {
+             if(frase.charAt(i) != frase.charAt(fin))
+             {
+                 compro=1;
+             }
+             i++;
+             fin--;
+         }
+        
+            if(compro==1)
+            {
+                System.out.println("No es un palindromo");
+            }
+            else
+            {
+                System.out.println("Si es palindromo");
+            }
+        
+        
+       }
        
        
     }
