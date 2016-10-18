@@ -12,16 +12,20 @@ import palindroma9.Palindroma9;
 
 /**
  *
- * @author dawbio
+ * @author Kevin y Ivan
  */
 public class Palindroma9JUnitTest {
     static Palindroma9 pali;
     public Palindroma9JUnitTest() {
     }
-    
+    /**
+     * Test para funcion comparar,como comparar
+     * devuelve un boolean lo comprovamos en assertEquals
+     */
     @Test
     public void testComparar(){
-        System.out.println("add()");
+        pali=new Palindroma9("ana");
+        System.out.println("Comparando");
         int resultado=pali.comparar("ana");
         int esperado=1;
         assertEquals(resultado,esperado);

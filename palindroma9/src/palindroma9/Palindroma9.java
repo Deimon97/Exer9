@@ -56,12 +56,10 @@ public class Palindroma9 {
         
             if(compro==1)
             {
-                System.out.println("No es un palindromo");
                 return 0;
             }
             else
             {
-                System.out.println("Si es palindromo");
                 return 1;
                         
             }
