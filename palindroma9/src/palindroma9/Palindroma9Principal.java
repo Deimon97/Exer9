@@ -8,17 +8,26 @@ package palindroma9;
 import java.util.Scanner;
 
 /**
- *
- * @author dawbio
+ * Is a princiapal for the app palindroma9
+ * @author Kevin y Ivan
  */
 public class Palindroma9Principal {
     public static Scanner scanner =new Scanner(System.in);
     public static void main(String [] args ) 
 	{
-             Palindroma9 pali = new Palindroma9();
+            int resul=0; 
+            Palindroma9 pali = new Palindroma9();
               System.out.println("Frase a comprobar");
               pali.setFrase(scanner.next());
-              pali.comparar(pali.getFrase());
+             resul=pali.comparar(pali.getFrase());
+             if(resul==1)
+             {
+                System.out.println("Si es palindroma"); 
+             }
+             else 
+             {
+                 System.out.println("No es palindroma");
+             }
         }
     
 }
