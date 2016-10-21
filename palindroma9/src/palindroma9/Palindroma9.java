@@ -50,31 +50,18 @@ public class Palindroma9 {
          frase=frase.replace("ú","u");
          frase=frase.replaceAll("[-+.^:,]","");
         String frase2=new StringBuilder(this.frase).reverse().toString();
-         
-         int compro=0;
-         int i=0;
-      
+        
              if(frase.equals(frase2))
              {
-                 compro=1;
+                 return 1;
              }
         
-        
-            if(compro==1)
-            {
-                return 0;
-            }
             else
             {
-                return 1;
-                        
+               return 0;          
             }
-        
-        
        }
-       
-       
-    }
+}
 
 
     
