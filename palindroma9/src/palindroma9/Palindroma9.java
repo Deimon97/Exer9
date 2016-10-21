@@ -41,18 +41,24 @@ public class Palindroma9 {
      */
        public int comparar(String frase)
        {
-         int fin=frase.length()-1;
+         
+        frase=frase.replace(" ","");
+         frase=frase.replace("á","a");
+         frase=frase.replace("é","e");
+         frase=frase.replace("í","i");
+         frase=frase.replace("ó","o");
+         frase=frase.replace("ú","u");
+         frase=frase.replaceAll("[-+.^:,]","");
+        String frase2=new StringBuilder(this.frase).reverse().toString();
+         
          int compro=0;
          int i=0;
-        while(i<fin)
-         {
-             if(frase.charAt(i) != frase.charAt(fin))
+      
+             if(frase.equals(frase2))
              {
                  compro=1;
              }
-             i++;
-             fin--;
-         }
+        
         
             if(compro==1)
             {
